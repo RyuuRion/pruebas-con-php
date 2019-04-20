@@ -14,7 +14,7 @@
   <div class="container">
         <div class="row">
            <div class="col-xl-12 mt-5 titulo">
-                <h1>Modulo Inicio</h1>
+                <h1>Modulo Inicio usuario administrador </h1>
             </div>
         </div>
         <div class="row">
