@@ -41,10 +41,10 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Selecciona una Imagen</label>
-                        <input name="archivo" type="file" id="archivo" class="form-control" accept="image/jpeg,image/gif,image/png">
+                        <input name="archivo" required type="file" id="archivo" class="form-control" accept="image/jpeg,image/gif,image/png">
                     </div>
                     <button type="submit" class="btn btn-primary">Registrar</button>
-                    <a class="btn btn-success ml-2" href="/" style="color:#fff;">volver a inicio</a>
+                    <a class="btn btn-success ml-2" href="/inicio/" style="color:#fff;">volver a inicio</a>
                 </form>
             </div>
         </div>

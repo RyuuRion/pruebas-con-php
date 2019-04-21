@@ -8,7 +8,7 @@
         $idUsuario= $mysqli->real_escape_string($_POST['idusuario']);
       $email=$mysqli->real_escape_string($_POST['email']);
       $nombre=$mysqli->real_escape_string($_POST['nombre']);
-      $pass=$mysqli->real_escape_string($_POST['pass']);
+      $pass=password_hash($_POST['pass'], PASSWORD_DEFAULT);
       $rut=$mysqli->real_escape_string($_POST['rut']);
     
     
@@ -52,7 +52,6 @@
     }
   
 ?>
-
 <!doctype html>
 <html lang="es">
   <head>

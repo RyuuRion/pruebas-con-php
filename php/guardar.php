@@ -2,15 +2,10 @@
 
  include ("conexion.php");
 
- $mysqli = mysqli_connect("127.0.0.1","root","","test_php");
- if(!$mysqli){
-    die("murio la db WEEEEEEYYY". mysqli_connect_error() . PHP_EOL);
-    }
   $email=$mysqli->real_escape_string($_POST['email']);
   $nombre=$mysqli->real_escape_string($_POST['nombre']);
-  $pass=$mysqli->real_escape_string($_POST['pass']);
+  $pass=password_hash($_POST['pass'], PASSWORD_DEFAULT);
   $rut=$mysqli->real_escape_string($_POST['rut']);
-
 
  $query= 'INSERT into usuario (Email, usuarioNombre, UsuarioPass, UsuarioRut) Values ("'.$email.'","'.$nombre.'","'.$pass.'","'.$rut.'")';
 

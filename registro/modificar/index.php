@@ -105,7 +105,7 @@
 
 
                     <button type="submit" class="btn btn-primary">Actualizar</button>
-                    <a class="btn btn-success ml-2" href="/" style="color:#fff;">volver a inicio</a>
+                    <a class="btn btn-success ml-2" href="/registro/mostrar/" style="color:#fff;">volver a inicio</a>
 
                 </form>
             </div>

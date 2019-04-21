@@ -49,7 +49,7 @@
                     <div class="input-group-append" id="button-addon4">
                         <input type="submit" class="btn btn-primary" value="busqueda">
                         <a class="btn btn-danger ml-2" href="/registro/" style="color:#fff;">Agregar Nuevo Registro</a>
-                        <a class="btn btn-success ml-2" href="/" style="color:#fff;">volver a inicio</a>
+                        <a class="btn btn-success ml-2" href="/inicio/" style="color:#fff;">volver a inicio</a>
                         <a class="btn btn-warning ml-2" href="/registro/mostrar" style="color:#fff;">Mostrar Todo</a>
                     </div>
                 </div>

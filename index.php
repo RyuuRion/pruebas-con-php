@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,17 +14,24 @@
   <div class="container">
         <div class="row">
            <div class="col-xl-12 mt-5 titulo">
-                <h1>Modulo Inicio usuario administrador </h1>
+                <h1>login</h1>
             </div>
         </div>
         <div class="row">
             <div class="offset-lg-3 mt-5">
             </div>
             <div class="col-lg-6 formulario">
-                <a href="/registro/" class="btn btn-primary" >Registrar nuevo usuario</a><br>
-                <a href="/registro/mostrar/" class="mt-1 btn btn-danger">Ver/Editar/Eliminar usuarios</a> <br>
-                <a href="/registro/" class="btn btn-success mt-1" >Registrar nuevo anime</a><br>
-                <a href="/registro/mostrar/" class="mt-1 btn btn-warning">Ver/Editar/Eliminar animes</a>
+                <form method="POST"  action="php/login.php" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" required  id="correo" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" required autocomplete="off" name="pass" id="pass" class="form-control" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                </form>
             </div>
         </div>
     </div>

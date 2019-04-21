@@ -14,9 +14,11 @@
      if(!$resultado){
         echo ("no Entro la wea");
     }
+    
 
     eliminarDir('../img/'.$idUsuario);
-	
+
+    }
 	function eliminarDir($carpeta)
 	{
 		foreach(glob($carpeta . "/*") as $archivos_carpeta)
