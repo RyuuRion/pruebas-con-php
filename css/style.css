@@ -6,3 +6,10 @@
     align-content: center;
     padding: 40px;
 }
+.card-anime{
+    border-radius: 0px 0px 20px 20px!important;
+}
+.card-anime:hover{
+    background: rgba(0, 0,0, 0.8);
+    color: #fff;
+}
