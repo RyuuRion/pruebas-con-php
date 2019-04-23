@@ -31,11 +31,11 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img src="https://cysticfibrosisnewstoday.com/wp-content/uploads/2016/11/shutterstock_133446737-1400x480.jpg" class="d-block w-100" alt="...">
+                  <img src="/img/imgAnimes/<?php echo $row['idanime']; ?>/img-carrousel.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-caption d-none d-md-block">
                     <h5>Bienvenidos</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p><?php echo $row['resumen']; ?></p>
               </div>
           </div>
       </div>
@@ -44,7 +44,7 @@
         <div class="container mt-5">
             <div class="loop">
                 <div class="row">
-                    <div class="col-lg-12 nani">
+                    <div class="col-lg-3 nani">
                             <div class="cargarimg mt-2">
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
@@ -54,7 +54,7 @@
                                             </ol>
                                             <div class="carousel-inner banner-img ">
                                               <div class="carousel-item active">
-                                                <img src="/img/imgAnimes/<?php echo $row['idanime']; ?>/img-carrousel.jpg" class="d-block w-100" alt="...">
+                                                <img src="/img/imgAnimes/<?php echo $row['idanime']; ?>/imgcard.jpg" class="d-block w-100" alt="...">
                                               </div>
                                               <div class="carousel-item">
                                                 <img src="http://s1.1zoom.me/big0/801/Fields_Sky_Sunrises_and_443127.jpg" class="d-block   w-100" alt="...">
@@ -78,9 +78,57 @@
                                     <hr>
                             </div>
                             <div class="cargarinfo">
-                                <p><a href="#"><?php echo $row['categoria']; ?></a></p>
-                                <p><?php echo $row['resumen']; ?></p>
+                                <p><a href="#"><?php echo $row['categoria']; ?></a></p><hr>
+                                <p>Fecha de Emision: <?php echo $row['Emision']; ?></p><hr>
+                                <p>Fecha de Finalización: <?php echo $row['finalizacion']; ?></p><hr>
+
                             </div>
+                    </div>
+                    <div class="col-lg-9">
+                    <table class="table table-hover" style="text-align:center;">
+                    <thead class="thead-dark">
+                        <th>categorias</th>
+                    </thead>
+                    <tbody >
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td><a href="#">capitulo 4</a></td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+                            <tr>
+                            <td>Capitulo 1</td>
+                            </tr>
+
+                    </tbody>
+                </table>
                     </div>
                 </div>
             </div>
